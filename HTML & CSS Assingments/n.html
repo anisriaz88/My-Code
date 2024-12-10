@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Notepad</title>
+    <script src="HTML & CSS Assingments/n.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+        }
+        #notepad-container {
+            width: 80%;
+            max-width: 800px;
+            margin: auto;
+            text-align: center;
+        }
+        textarea {
+            width: 100%;
+            height: 400px;
+            font-size: 16px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            resize: none;
+        }
+        .buttons {
+            margin-top: 10px;
+        }
+        button {
+            font-size: 16px;
+            padding: 10px 20px;
+            margin: 0 5px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #ddd;
+        }
+    </style>
+</head>
+<body>
+    <div id="notepad-container">
+        <h1>Simple Notepad</h1>
+        <textarea id="text-area" placeholder="Start typing here..."></textarea>
+        <div class="buttons">
+            <button onclick="clearText()">Clear</button>
+            <button onclick="saveText()">Save</button>
+        </div>
+    </div>
+
+    <script>
+        // Clear the text area with confirmation
+        function clearText() {
+            const confirmClear = confirm("Are you sure you want to clear the text?");
+            if (confirmClear) {
+                document.getElementById('text-area').value = '';
+            }
+        }
+    
+        // Save the text to a file
+        function saveText() {
+            const text = document.getElementById('text-area').value;
+            
+            if (text.trim() === "") {
+                alert("Cannot save an empty file!");
+                return;
+            }
+    
+            const blob = new Blob([text], { type: 'text/plain' });
+            const link = document.createElement('a');
+            link.href = URL.createObjectURL(blob);
+            link.download = 'notepad.txt';
+            link.click();
+            alert("File saved successfully!");
+        }
+    
+        // Add keyboard shortcuts
+        document.addEventListener('keydown', (event) => {
+            if (event.ctrlKey && event.key === 's') { // Ctrl + S for save
+                event.preventDefault();
+                saveText();
+            } else if (event.ctrlKey && event.key === 'n') { // Ctrl + N for clear
+                event.preventDefault();
+                clearText();
+            }
+        });
+    </script>
+    
+</body>
+</html>
