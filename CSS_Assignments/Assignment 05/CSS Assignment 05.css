@@ -1,0 +1,300 @@
+.container{
+    margin: 0;
+    padding: 0;
+}
+.banner{
+    display: flex;
+    background-color: #0067ED;
+    color: white;
+    justify-content: space-between;
+    align-items: center;
+    font-family: sans-serif;
+    font-size: 20px;
+    padding: 10px;
+}
+.banner-one{
+    display: flex;
+    margin-left: 150px;
+    gap: 20px;
+}
+
+.banner-two{
+    display: flex;
+    margin-right: 150px;
+    gap: 20px;
+}
+
+.banner-two > a > i{
+    display: flex;
+    color: white;
+}
+.banner-two > a > i:hover{
+    text-decoration: none;
+    color: black;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    font-family: sans-serif;
+    font-size: 20px;
+    padding: 10px;
+}
+
+.logo{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-top: 10px;
+    margin-left: 50px;
+    width: 350px;
+}
+
+.logo img{
+    width: 100px;
+    height: 100px;
+}
+
+h1{
+    margin-left: 20px;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+    gap: 2%;
+}
+
+nav ul{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    top: 0px;
+    background-color: white;
+    z-index: 0;
+}
+
+ul li{
+    list-style: none;
+    padding: 20px;
+}
+
+li a{
+    text-decoration: none;
+    color: black;
+    font-family: sans-serif;
+    font-size: 30px;
+}
+
+
+nav > ul > li > ul{
+    display: none;
+}
+
+nav > ul > li:hover .dropdown{
+    display: block;
+    position: absolute;
+    right: 100px;
+}
+
+.btn a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0067ED;
+    color: white;
+    text-decoration: none;
+    border: none;
+    font-size: 20px;
+    margin-right: 50px;
+    margin-top: 10px;
+    padding: 20px;
+}
+.btn a:hover{
+    background-color: black;
+    color: white;
+}
+
+.sec-one{
+   background-image: url(./BG.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-top: 20px;
+}
+
+.sec-one h3{
+    background-color: #0067ED;
+    border-radius: 20px;
+    text-align: center;
+    font-size: 20px;
+    color: white;
+    width: 15%;
+    margin: 60px;
+    padding: 10px;
+}
+
+.sec-one h1{
+    text-align: center;
+    font-family: Roboto, sans-serif;
+    font-size: 50px;
+    color: black;
+    /* margin-top: 10px; */
+    width: 30%;
+}
+
+.sec-one h2{
+    text-align: center;
+    font-family: Roboto, sans-serif;
+    font-size: 50px;
+    color: #0067ED;
+    /* margin-top: 10px; */
+    width: 25%;
+}
+
+.sec-one p{
+    text-align: center;
+    font-family: Roboto, sans-serif;
+    font-size: 25px;
+    margin-left: 20px;
+    color: black;
+    width: 33%;
+}
+
+.aa{
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    color: white;
+    text-decoration: none;
+    border: none;
+    width: 50%;
+    padding: 20px;
+}
+
+.a-one{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0067ED;
+    color: white;
+    text-decoration: none;
+    border: none;
+    font-family: sans-serif;
+    font-size: 25px;
+    border-radius: 20px;
+    width: 20%;
+    margin-left: 10px;
+    padding: 20px;
+}
+
+.a-one:hover{
+    background-color: black;
+    color: white;
+}
+
+.a-two{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #0067ED;
+    text-decoration: none;
+    border: none;
+    font-family: sans-serif;
+    font-size: 25px;
+    width: 20%;
+    border-radius: 20px;
+    margin-left: 50px;
+    /* margin-top: 10px; */
+    padding: 20px;
+}
+
+.a-two:hover{
+    background-color: #0067ED;
+    color: white;
+}
+
+.services{
+    /* display: flex; */
+    background-image: url(./service-bg1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-top: 40px;
+}
+
+.h-ser{
+    width: 100%;
+}
+
+
+
+.h-ser h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Roboto, sans-serif;
+    font-size: 25px;
+    color: #0067ED;
+    margin-top: 30px;
+    position: center;
+}
+
+.h-ser p{
+    font-family: Roboto, sans-serif;
+    font-size: 25px;
+    color: white;
+    margin-top: 10px;
+    margin-left: 40%;
+    width: 22%;
+    position: center;
+    padding: 20px;
+}
+
+.m-ser{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.service-item{
+    justify-content: center;
+    align-content: center;
+    border: 1px solid black;
+    border-radius: 20px;
+    width: 25%;
+    font-size: 30px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    padding: 20px;
+}
+
+.footer{
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    background-color: #000000;
+    color: white;
+    font-family: sans-serif;
+    font-size: 20px;
+    margin-top: 30px;
+    /* padding: 10px; */
+}
+
+.footer ul li{
+    list-style: none;
+    color: white;
+} 
+
+.footer ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+
+
+
+

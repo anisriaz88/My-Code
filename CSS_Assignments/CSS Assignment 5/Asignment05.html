@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 05</title>
+    
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+       
+        .header {
+            background-color: #0078FF;
+            color: white;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 14px;
+        }
+
+        .header a {
+            color: white;
+            text-decoration: none;
+        }
+
+        
+        .nav {
+    
+            padding: 15px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .nav .logo {
+            color: rgb(10, 9, 68);
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .nav ul {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+
+        .nav ul li {
+            margin: 0 15px;
+        }
+
+        .nav ul li a {
+            color: black;
+            text-decoration: none;
+            font-size: 16px;
+        }
+
+        .nav .cta {
+            background-color: #0078FF;
+            color: #ffffff;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        
+        .hero {
+            background-image: url('./bg.jpg');
+            background-size: cover;
+            background-position: center;
+            text-align: center;
+            color: rgb(24, 28, 27);
+            padding: 100px ;
+        }
+
+        .tagline {
+            display: flex;
+            justify-content: start;
+            background-color: #0067ED;
+            color: #ffffff;
+            display: inline-block;
+            padding: 20px;
+            border-radius: 30px;
+            /* margin-bottom: 20px; */
+            font-size: 24px;
+        }
+
+        .hero h1 {
+            display: flex;
+            justify-content: start;
+            font-size: 48px;
+            margin: 20px 0;
+        }
+
+        .hero p {
+            display: flex;
+            justify-content: start;
+            font-size: 18px;
+            margin: 20px 0;
+        }
+
+        .hero .buttons a {
+            /* display: inline-block; */
+            /* justify-content: start; */
+            text-decoration: none;
+            color: white;
+            background-color: #0078FF;
+            padding: 10px 20px;
+            border-radius: 5px;
+            margin-right: 25%;
+            width: 10%;
+            border: 2px solid #000;
+            font-weight: bold;
+        }
+
+        .hero .buttons a.secondary {
+            /* display: flex; */
+            justify-content: start;
+            margin-right: 30%;
+            background-color: #333;
+        } 
+
+       
+        .services {
+            display: flex;
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        .services h2 {
+            font-size: 36px;
+            margin-bottom: 30px;
+        }
+
+        .services .service-item {
+            display: inline-block;
+            width: 300px;
+            margin: 20px;
+            text-align: left;
+        }
+
+        .services .service-item img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .services .service-item h3 {
+            font-size: 20px;
+            margin: 15px 0;
+        }
+
+        .services .service-item p {
+            font-size: 16px;
+            color: #555;
+        }
+
+        
+        .footer {
+            background-color: #333;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        .footer p {
+            margin: 0;
+        }
+
+    </style>
+</head>
+<body>
+
+    
+    <div class="header">
+        <span>92 Bowery St New York, NY 10013</span>
+        <a href="mailto:demo@example.com">demo@example.com</a>
+    </div>
+    <div class="navbar">
+        <nav class="nav">
+            <div class="logo">Poket</div>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Pages</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <a href="#" class="cta">Book Now</a>
+        </nav>
+    </div>
+
+   
+
+    <!-- Hero Section -->
+    <div class="hero">
+        <div class="tagline">SINCE 1987 COMPANY</div>
+        <h1>Shocking Revelation<br>Visa Services</h1>
+        <p>We bring over 35 years of public practice experience to clients; our firm is a family business.</p>
+        <div class="buttons">
+            <a href="#">Our Solution</a>
+            <a href="#" class="secondary">Read More</a>
+        </div>
+    </div>
+
+   
+    <div class="services">
+        <h2>Our Services</h2>
+        <div class="service-item">
+            <img src="./team-01-1.jpg" alt="Service 1">
+            <h3>Service One</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis nec velit vel ligula tristique.</p>
+        </div>
+        <div class="service-item">
+            <img src="./team-02-1.jpg" alt="Service 2">
+            <h3>Service Two</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis nec velit vel ligula tristique.</p>
+        </div>
+        <div class="service-item">
+            <img src="./skill-thumb.jpg" alt="Service 3">
+            <h3>Service Three</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis nec velit vel ligula tristique.</p>
+        </div>
+    </div>
+
+   
+    <div class="footer">
+        <p>&copy; 2024 Poket. All rights reserved.</p>
+    </div>
+
+</body>
+</html>
+
